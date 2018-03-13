@@ -1,0 +1,16 @@
+Analize de algoritmos recursivos
+	Um algoritmo é dito recursivo se ele faz chamada a si mesmo. todo algoritmo recursivo tem que ter um caso em que não há chamada dele mesmo, coso contrario, teria eecução infinita. Tal caso que ele não se chama se chama caso base.
+
+	def fatorial(n):
+		if(n == 0):
+			return 1
+		else:
+			return fatorial(n-1) * n
+
+		teorema: o algoritmo é correto
+
+		prova: Por indução em x, base = 1, trivial. Supondo agora que a camada 
+
+		fatorial(x-1) resulta em (x-1)! (H.I.). Ao receber x(>0), o algorimo devolve: x * fatorial(x-1) = x * (x-1)! = x!
+		
+		Para determinar a complexidade temporal do algoritmo fatorial, vamos determinar

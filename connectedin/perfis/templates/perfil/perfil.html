@@ -6,5 +6,7 @@
     </head>
     <body>
         <h1>Isso é o perfil do {{ perfil.nome }}</h1>
+		<br>
+		<p><a href="{% url 'convidar' perfil.id %}">convidar</a></p>        
     </body>
 </html>
